@@ -24,3 +24,8 @@ RSA key fingerprint	BGL_ASR9K-MPL-1-TEST14	172.16.254.73
 
 [bpa]
 172.16.254.88 / 91 can be others too
+
+# IMPORTANT
+# Keep all devices backup in storeData dir from ansible genie netmiko napalm
+# or choose indivisual datastore per network library
+
