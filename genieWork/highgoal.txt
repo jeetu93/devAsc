@@ -48,5 +48,54 @@ git diff
 git log
 git show _logID_
 
+## issue i faced while creating testbed.yml file dynamically
+
+root@2f5cc7c57d52:/var/opt/devNet/devAsc/genieWork/myjob# genie create testbed file --path parameter.csv --output testbed.yml
+
+please make sure pyats.contrib is installed. If not, please do 'pip install pyats.contrib'.
+
+invalid option: file
+
+root@2f5cc7c57d52:/var/opt/devNet/devAsc/genieWork/myjob# genie create testbed file --path parameter.csv --output testbed.yml --encode-password
+
+please make sure pyats.contrib is installed. If not, please do 'pip install pyats.contrib'.
+
+invalid option: file
+
+root@2f5cc7c57d52:/var/opt/devNet/devAsc/genieWork/myjob# pip install pyats.contrib
+-bash: pip: command not found
+root@2f5cc7c57d52:/var/opt/devNet/devAsc/genieWork/myjob# pip3 install pyats.contrib
+Collecting pyats.contrib
+
+
+
+root@2f5cc7c57d52:/var/opt/devNet/devAsc/genieWork/myjob# genie create testbed file --path parameter.csv --output testbed.yml --encode-password
+
+'Empty line found in given CSV/Excel file.'
+
+root@2f5cc7c57d52:/var/opt/devNet/devAsc/genieWork/myjob# vim parameter.csv
+root@2f5cc7c57d52:/var/opt/devNet/devAsc/genieWork/myjob#
+root@2f5cc7c57d52:/var/opt/devNet/devAsc/genieWork/myjob# genie create testbed file --path parameter.csv --output testbed.yml --encode-password
+Testbed file generated:
+parameter.csv -> testbed.yml
+
+
+root@2f5cc7c57d52:/var/opt/devNet/devAsc/genieWork/myjob# vim testbed.yml
+devices:
+  BGL_KTK_1AC_CASR920R01:
+    connections:
+      cli:
+        ip: 172.16.254.60
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENC{w57DrMOQwqXCpcKS}'
+        username: cisco
+      enable:
+        password: '%ENC{w57DrMOQwqXCpcKS}'
+    os: iosxe
+    type: iosxe
+
+
 
 

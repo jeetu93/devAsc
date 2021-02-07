@@ -1,0 +1,14 @@
+devices:
+  BGL_KTK_1AC_CASR920R01:
+    connections:
+      cli:
+        ip: 172.16.254.60
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENC{w57DrMOQwqXCpcKS}'
+        username: cisco
+      enable:
+        password: '%ENC{w57DrMOQwqXCpcKS}'
+    os: iosxe
+    type: iosxe
