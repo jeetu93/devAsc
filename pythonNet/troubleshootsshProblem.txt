@@ -1,0 +1,36 @@
+
+#step0 ssh tried from linux machine : fail
+
+root@0a94f6e2e4f7:/var/opt/devNet/devAsc/pythonNet# ssh cisconso@172.16.254.75
+Unable to negotiate with 172.16.254.75 port 22: no matching host key type found. Their offer: ssh-dss
+
+# step1 again tried after making changes in /etc/ssh/ssh_config file : fail
+root@0a94f6e2e4f7:/etc/ssh# ssh cisconso@172.16.254.72
+Unable to negotiate with 172.16.254.72 port 22: no matching key exchange method found. Their offer: ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group14-sha1
+
+# step2 again changes made
+
+vim /etc/ssh/ssh_config
+
+# make below changes
+
+Host 172.16.254.75 172.16.254.72 #add hosts here
+    HostKeyAlgorithms ssh-dss # add algo here
+    kexAlgorithms diffie-hellman-group14-sha1 # make changes here
+
+
+# Host * // this is also possible
+# Host 192.168.8.* 172.16.254.* // such combination possible
+
+# step3 : this time it worked
+root@0a94f6e2e4f7:/etc/ssh# ssh cisconso@172.16.254.72
+The authenticity of host '172.16.254.72 (172.16.254.72)' can't be established.
+DSA key fingerprint is SHA256:g49BSmqfPuDxuFmHSVfrRPojPDhsvUa6EBufAax3V1o.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '172.16.254.72' (DSA) to the list of known hosts.
+Password:
+
+
+RP/0/RSP0/CPU0:BGL_BFD_901_1AG_CASR9KTR072#
+
+
