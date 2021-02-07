@@ -98,4 +98,7 @@ devices:
 
 
 
+# ping was not working so i added
+
+apt install iputils-ping
 
