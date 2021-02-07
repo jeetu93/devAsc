@@ -1,0 +1,23 @@
+install genie
+testbedfile create
+start adhoc genie
+
+go for pyats tests with genie
+
+# start with pyats genie
+
+python3 -m venv .
+source bin/activate
+:
+pip insatll pyATS[library]
+git clone https://github.com/CiscoTestAutomation/examples
+
+# to create testbed file automatically for you
+# do it one by one or altogether user choice
+pip3 install xlrd xlwt xlsxwriter
+
+# create your testbed file dynamically
+genie create testbed --output yaml/testbed.yml --encode-password
+
+
+
