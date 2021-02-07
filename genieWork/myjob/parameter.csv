@@ -1,0 +1,3 @@
+hostname,ip,username,password,protocol,os
+BGL_KTK_1AC_CASR920R01,172.16.254.60,cisco,nso123,ssh,iosxe
+

@@ -19,5 +19,34 @@ pip3 install xlrd xlwt xlsxwriter
 # create your testbed file dynamically
 genie create testbed --output yaml/testbed.yml --encode-password
 
+or
+
+genie create testbed file --path parameter.csv --output testbed.yml --encode-password
+
+#keep below parameters in csv file source
+#device vars connectivity details in csv file 
+
+ip 172.16.254.60
+hostname BGL_KTK_1AC_CASR920R01
+connection ssh
+username cisco
+password nso123
+
+# use your git skills
+
+git remote add
+git usename
+git mail
+git clone
+git push
+git pull
+git checkout
+git branch
+git add 
+git commit -m "your comment"
+git diff
+git log
+git show _logID_
+
 
 
