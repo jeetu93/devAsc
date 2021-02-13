@@ -1,0 +1,8 @@
+---
+anisble_network_os: cisco.ios.ios
+ansible_user: cisco
+ansible_password: nso123
+interpreter_python: /usr/bin/python3
+ansible_connection: ansible.netcommon.network_cli
+#ssh_keyfile: /home/admin/.ssh/autherise_keys
+

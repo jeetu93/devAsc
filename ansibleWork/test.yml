@@ -1,4 +1,0 @@
----
-- name: Run command and print to terminal window
-  hosts: 127.0.0.1
-  gather_facts: true

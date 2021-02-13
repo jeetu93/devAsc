@@ -1,0 +1,14 @@
+---
+- name: "PLAY 1: capture and store interface details"
+  hosts: cisco_iosxe
+  gather_facts: False
+  connection: ansible.netcommon.network_cli
+  tasks:
+    - name: "TASK1 : Get interface details from router"
+      cisco.ios.ios_command:
+        commands: "show ip int br"
+      register: cli_result
+
+    - name : "TASK2 : print interface details"
+      debug:
+        msg: "{{ cli_results }}"

@@ -1,2 +1,9 @@
 hostname,ip,username,password,protocol,os
 BGL_KTK_1AC_CASR920R01,172.16.254.60,cisco,nso123,ssh,iosxe
+BGL_CASR920-3-LNS-2,172.16.254.61,cisco,nso123,ssh,iosxe
+CHN_CASR920_2,172.16.254.71,cisco,nso123,ssh,iosxe
+CHN_CASR903-3-LNS-2,172.16.254.74,cisco,nso123,ssh,iosxe
+CHN_CASR920_1,172.16.254.92,cisco,nso123,ssh,iosxe
+BGL_BFD_901_1AG_CASR9KTR072,172.16.254.72,cisconso,nso123,ssh,iosxr
+BGL_ASR9K-MPL-1-TEST14,172.16.254.73,cisconso,nso123,ssh,iosxr
+BGL_CASR9K112_3,172.16.254.75,cisconso,nso123,ssh,iosxr

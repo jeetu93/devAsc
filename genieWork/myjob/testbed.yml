@@ -1,4 +1,56 @@
 devices:
+  BGL_ASR9K-MPL-1-TEST14:
+    connections:
+      cli:
+        ip: 172.16.254.73
+        protocol: ssh
+    credentials:
+      default:
+        password: nso123
+        username: cisconso
+      enable:
+        password: nso123
+    os: iosxr
+    type: iosxr
+  BGL_BFD_901_1AG_CASR9KTR072:
+    connections:
+      cli:
+        ip: 172.16.254.72
+        protocol: ssh
+    credentials:
+      default:
+        password: nso123
+        username: cisconso
+      enable:
+        password: nso123
+    os: iosxr
+    type: iosxr
+  BGL_CASR920-3-LNS-2:
+    connections:
+      cli:
+        ip: 172.16.254.61
+        protocol: ssh
+    credentials:
+      default:
+        password: nso123
+        username: cisco
+      enable:
+        password: nso123
+    os: iosxe
+    type: iosxe
+  BGL_CASR9K112_3:
+    connections:
+      cli:
+        ip: 172.16.254.75
+        protocol: ssh
+    credentials:
+      default:
+        password: nso123
+        username: cisconso
+      enable:
+        password: nso123
+    os: iosxr
+    type: iosxr
   BGL_KTK_1AC_CASR920R01:
     connections:
       cli:
@@ -6,9 +58,48 @@ devices:
         protocol: ssh
     credentials:
       default:
-        password: '%ENC{w57DrMOQwqXCpcKS}'
+        password: nso123
         username: cisco
       enable:
-        password: '%ENC{w57DrMOQwqXCpcKS}'
+        password: nso123
+    os: iosxe
+    type: iosxe
+  CHN_CASR903-3-LNS-2:
+    connections:
+      cli:
+        ip: 172.16.254.74
+        protocol: ssh
+    credentials:
+      default:
+        password: nso123
+        username: cisco
+      enable:
+        password: nso123
+    os: iosxe
+    type: iosxe
+  CHN_CASR920_1:
+    connections:
+      cli:
+        ip: 172.16.254.92
+        protocol: ssh
+    credentials:
+      default:
+        password: nso123
+        username: cisco
+      enable:
+        password: nso123
+    os: iosxe
+    type: iosxe
+  CHN_CASR920_2:
+    connections:
+      cli:
+        ip: 172.16.254.71
+        protocol: ssh
+    credentials:
+      default:
+        password: nso123
+        username: cisco
+      enable:
+        password: nso123
     os: iosxe
     type: iosxe

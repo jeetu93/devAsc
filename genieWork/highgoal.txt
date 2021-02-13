@@ -102,3 +102,10 @@ devices:
 
 apt install iputils-ping
 
+
+
+genie parse "show interfaces" --testbed-file testbed.yml --devices CHN_CASR920_2 --output demo1
+genie parse "show interfaces" --testbed-file testbed.yml --devices CHN_CASR920_2 --output demo2
+genie diff demo1 demo2
+
+# you can use learn etc
